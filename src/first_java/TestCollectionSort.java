@@ -16,7 +16,8 @@ public class TestCollectionSort {
 		school.add( new Person("Zhao",22));
 		System.out.println(school); //****可以打印List,需重载toString()
 		
-		Collections.sort( school, new PersonComparator() );
+//		Collections.sort( school, new PersonComparator() );  使用Lambda表达式更方便
+		Collections.sort(school, (p1,p2)->p1.age-p2.age);
 		System.out.println(school);
 		
 		int index = Collections.binarySearch(school, new Person("Wang", 28), new PersonComparator());
