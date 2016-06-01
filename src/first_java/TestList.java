@@ -24,7 +24,8 @@ public class TestList {
 		}
 		for (Photo photo: album){
 			System.out.println(photo.toString());
-		}	
+		}
+
 	}
 
 }
