@@ -1,6 +1,7 @@
 package first_java;
 
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -40,6 +41,7 @@ class Photo{
 	}
 	@Override
 	public String toString(){
-		return title+"("+date+")"+memo;
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		return title+"("+formatter.format(date)+")"+memo;
 	}
 }
