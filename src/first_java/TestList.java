@@ -12,6 +12,7 @@ public class TestList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<Photo> album=new LinkedList<>();
+		//List<int> nums= new LinkedList<>(); 这里不能用int，必须是引用--Integer
 		
 		album.add(new Photo("one", new Date(), "classroom"));
 		album.add(new Photo("tow", new Date(), "library"));
