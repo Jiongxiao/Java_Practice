@@ -41,7 +41,6 @@ class MyThread extends Thread{
 class MyTask implements Runnable {
 	private int n;
 	public MyTask(int n) {
-		// TODO Auto-generated constructor stub
 		this.n=n;
 	}
 	public void run() {
