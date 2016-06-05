@@ -15,7 +15,7 @@ public class TestThread {
 		for (int i = 0; i < 6; i++) {
 			System.out.println("Main--"+i);
 			try{
-				Thread.sleep(500);
+				Thread.sleep(1000);
 			}catch(InterruptedException e){}
 		}
 		
