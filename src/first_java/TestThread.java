@@ -10,7 +10,9 @@ public class TestThread {
 		
 		MyTask myTask = new MyTask(20); //添加了一个线程
 		Thread t2= new Thread(myTask);
+		t2.setDaemon(true); //设置为后台线程
 		t2.start();
+
 		
 		for (int i = 0; i < 6; i++) {
 			System.out.println("Main--"+i);
