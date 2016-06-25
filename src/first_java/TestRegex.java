@@ -1,6 +1,5 @@
 package first_java;
 
-import java.io.PushbackReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
