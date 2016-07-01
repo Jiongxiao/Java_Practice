@@ -12,7 +12,17 @@ public class TestMultiListener {
 		JTextArea msg = new JTextArea();
 		Listener1 m1= new Listener1(frame);
 		Listener2 m2= new Listener2(frame, msg);
-		frame.addWindowListener(m1);
+		
+		
+//		frame.addWindowListener(m1);
+
+		//匿名类
+		frame.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e){System.exit(0);}
+		});
+		
+
+		
 		frame.addMouseMotionListener(m2);
 		frame.add(msg, BorderLayout.SOUTH);
 		frame.setSize(400, 300);
@@ -74,6 +84,7 @@ class Listener1 implements WindowListener{
 class Listener10 extends WindowAdapter{
 	public void windowClosing(WindowEvent e){System.exit(0);}
 }
+
 
 class Listener2 implements MouseMotionListener{
 	private JFrame f;
