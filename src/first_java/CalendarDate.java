@@ -19,6 +19,7 @@ public class CalendarDate {
 		Calendar calendar=Calendar.getInstance();
 		calendar.roll(MONTH, 1);
 		System.out.println(calendar.get(MONTH)+"月"+calendar.get(DAY_OF_MONTH)+"日");
+
 		
 		Date date = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss",Locale.CHINA);
